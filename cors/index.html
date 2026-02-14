@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="contenedor-principal">
+    <h1>Buscador de Productos</h1>
+
+    <div class="barra-busqueda">
+        <input
+                type="text"
+                id="campoBusqueda"
+                placeholder="Buscar productos por nombre o descripción..."
+                autocomplete="off"
+        >
+        <button id="btnLimpiar" disabled>Limpiar búsqueda</button>
+    </div>
+
+    <div id="mensajeEstado" class="mensaje" style="display:none;"></div>
+
+    <table id="tablaProductos" style="display:none;">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Categoria</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+        </thead>
+        <tbody id="listaProductos"></tbody>
+    </table>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

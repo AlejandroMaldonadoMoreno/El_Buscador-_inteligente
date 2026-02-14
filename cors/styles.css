@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.barra-busqueda {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#campoBusqueda {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+#campoBusqueda:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#btnLimpiar {
+    padding: 12px 24px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnLimpiar:hover {
+    background-color: #d32f2f;
+}
+
+#btnLimpiar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mensaje {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.precio {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.stock {
+    text-align: center;
+}
